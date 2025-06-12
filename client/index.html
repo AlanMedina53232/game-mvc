@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jumper Box MVC</title>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+  <script defer src="main.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    #start-screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    input, button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="start-screen">
+    <h2>Ingresa tu nombre para comenzar</h2>
+    <input type="text" id="usernameInput" placeholder="Tu nombre..." />
+    <button onclick="startGame()">Jugar</button>
+  </div>
+</body>
+</html>
