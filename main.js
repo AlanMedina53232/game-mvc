@@ -171,7 +171,7 @@ function collectStar(player, star) {
   score += 10;
   scoreText.setText(`Score: ${score} | Jugador: ${username}`);
 
-  fetch("https://serverjuego.onrender.com", {
+  fetch("https://serverjuego.onrender.com/api/player", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, score })
